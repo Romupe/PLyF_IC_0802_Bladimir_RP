@@ -1,0 +1,27 @@
+%hechos
+%
+es_padre(julio, abraham).
+es_padre(julio, nacho).
+es_padre(julio, aron).
+es_padre(abraham, isaac).
+es_padre(aron, luis).
+es_padre(aron, maria).
+es_padre(aron, yesi).
+
+es_madre(sarah, isaac).
+
+es_hombre(julio).
+es_hombre(abraham).
+es_hombre(nacho).
+es_hombre(aron).
+es_hombre(isaac).
+es_hombre(luis).
+
+es_mujer(sarah).
+es_mujer(maria).
+es_mujer(yesi).
+%regla%
+
+es_hijo(X,Y):-es_padre(Y,X),es_hobre(X).
+es_hija(X,Y):-es_padre(Y,X),es_mujer(X).
+es_abuelo(X,Z):-es_padre(X,Y),es_padre(Y,Z).
