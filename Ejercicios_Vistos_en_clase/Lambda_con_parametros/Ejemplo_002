@@ -1,0 +1,6 @@
+class LambdaTest:
+     @staticmethod
+     def main (args):
+        op = lambda num1, num2 :
+        print(num1+num2)
+        op. imprimeSuma (5,10)
