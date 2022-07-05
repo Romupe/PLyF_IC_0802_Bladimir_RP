@@ -1,0 +1,15 @@
+from Principal import PruebaExamen
+class Principal:
+    def main(arg):
+        pe=None
+        pe=lambda uno, dos, tres : print ("1.- La suma es:" + (uno+dos+tres))
+        pe.operacionPrueba(5, 5, 5)
+        printf("2.- La suma es: " + PruebaExamen.operacionPrueba(10, 10))
+        pe.mensajeHola()
+        pe.mensajeHola("3.- Fher")
+        pe=lambda uno, dos, tres : print("4.- El resultado es: " + (uno + (dos * tres)))
+        pe.operacionPrueba(5, PruebaExamen.operacionPrueba(1, 1), PruebaExamen.operacionPrueba(2, 2))
+Principal.miMetodo(pe)
+        Principal.miMetodo(lambda uno, dos, tres : print("5.- El resultado es : " + (uno + (dos / tres))))
+        pe = lambda uno, dos, tres : print("6.- El resultado es : " + (uno + (float(dos) / tres)))
+        Principal.miMetodo(pe, 5, 1, 2)
