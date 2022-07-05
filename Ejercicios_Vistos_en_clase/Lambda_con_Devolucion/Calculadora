@@ -1,0 +1,3 @@
+class calculadora:
+    def calcular(self, x, y):
+        pass
